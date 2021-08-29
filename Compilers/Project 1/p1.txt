@@ -1,0 +1,3 @@
+#!/bin/ksh
+
+java LAv3 $1

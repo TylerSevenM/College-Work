@@ -1,0 +1,23 @@
+A    -> int ID  Declaration  | void ID  Declaration 
+B    -> int ID  Declaration  | void ID  Declaration  | @
+Declaration     -> ;B | [n];B | (G){KL}B
+G    -> int ID IH | void S
+S    -> ID IH | @
+H    -> ,F | @
+F    -> int ID IH | void ID IH
+I    -> [] | @
+K    -> int ID DK | void ID DK | @
+D    -> ; | [n];
+L    -> ML | @
+M    -> R; | ; | {KL} | f(R)MO | w(R)M | rQ
+O    -> eM | @
+Q    -> ; | R;   
+R    -> ID N | %%nXVT | (R)XVT 
+N    -> =R | [R]P | ()XVT | (RC)XVT | XVT
+P    -> =R | XVT
+T    -> %%<=ZXV | %%<ZXV | %%>ZXV | %%>=ZXV | %%==ZXV | %%!=ZXV | @
+V    -> %%+ZXV | %%-ZXV | @
+X    -> %%*ZX | %%/ZX | @
+Z    -> (R) | ID J | n
+J    -> [R] | () | (RC) | @
+C    -> ,RC | @

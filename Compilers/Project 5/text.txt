@@ -1,0 +1,8 @@
+int main(int x, int b){
+    int y[10];
+    int g;
+    int t;
+    int x;
+    x= 4*t*(t*2-g+g-t*g)-g;
+    if(x+t <= g){}
+}

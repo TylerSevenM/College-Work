@@ -1,0 +1,29 @@
+int main(int x){
+    int z;
+    int zero;
+    zero = 5;
+    zero = x;
+    z = 10
+    z = zero + z;
+    zero = zero - zero + z + zero * zero / z / z / z;
+    main(zero);
+    {
+        int j;
+        int z;
+        j = 1000;
+        z = 250;
+        z = j/z;
+        {
+            int a;
+            int b;
+            a = b = 25;
+        }
+        int y;
+        y = z;
+        y = 12/z;
+    }
+}
+int dream(void){
+    int j;
+    j = 5;
+}
