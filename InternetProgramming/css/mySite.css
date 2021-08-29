@@ -1,0 +1,133 @@
+@import "default.css";
+/* DO NOT MODIFY THE @import STATEMENT ABOVE */
+
+/* You will use this CSS file for each of your projects. Simply add new CSS classes and elements to the end of the file. */
+
+/* Be careful to keep your selector names unique to avoid collisions, which can cause confusion. */
+#p1index, #p1schedule, #p1account{
+	background-color: rgb(59, 59, 59);
+	color: lightgray;
+}
+#p2index{
+    background-color: rgb(59, 59, 59);
+	color: lightgray;
+}
+#p3index{
+    background-color: rgb(59, 59, 59);
+	color: lightgray;
+}
+#cart_form{
+    background-color: rgb(59, 59, 59);
+	color: lightgray;
+}
+#logon_form{
+    background-color: rgb(59, 59, 59);
+	color: lightgray;
+}
+#results_form{
+    background-color: rgb(59, 59, 59);
+	color: lightgray;
+}
+#search_form{
+    background-color: rgb(59, 59, 59);
+	color: lightgray;
+}
+#index.php{
+    background-color: rgb(59, 59, 59);
+	color: lightgray;
+}
+#logon.php{
+    background-color: rgb(59, 59, 59);
+	color: lightgray;
+}
+#search.php{
+    background-color: rgb(59, 59, 59);
+	color: lightgray;
+}
+#p1index a:hover{
+    font-size: 150%;
+}
+#p1aboutme{
+    color: red;
+}
+#p1HandI{
+    color: orange;
+}
+#p1Edu{
+    color: yellow;
+}
+#bold{
+    font-weight:bold;
+}
+#italicized{
+    font-style:italic;
+}
+#underlined{
+    text-decoration: underline;
+}
+#p1scheduletable{
+    border-collapse: collapse;
+}
+#stripe:nth-child(even){
+    background-color: orangered;   
+}
+#stripe2:nth-child(odd){
+    background-color:yellow;
+}
+#p1scheduletableheaders{
+    color: blue;
+}
+input[type="radio"]:enabled{
+    background-color: green;
+}
+#upperLetter{
+    list-style-type: upper-alpha;
+}
+.CBL{
+    float:left;
+    width:10%;
+}
+.CBR{
+    float:right;
+    width:90%;
+}
+.p1checkboxes input[type=checkbox] {
+    cursor: pointer;
+    width: 16px;
+    height: 15px;
+    position: relative;
+}
+.p1checkboxes input[type=checkbox]:after {
+    width: 16px;
+    height: 15px;
+    background-color:grey;
+    content: " ";
+    position: absolute;
+    visibility: visible;
+}
+.p1checkboxes input[type=checkbox]:checked:after {
+    background-color: blue;
+    content: "✔";
+    text-align: center;
+    color:white;
+    font-size: 13px;
+}
+.p1radio input[type=radio] {
+    width: 16px;
+    height: 15px;
+    position: relative;
+}
+.p1radio input[type=radio]:after {
+    
+    width: 16px;
+    height: 15px;
+    
+    background-color:grey;
+    position: absolute;
+    top: 0;
+    content: " ";
+    visibility: visible;    
+}
+.p1radio input[type=radio]:checked:after {
+    background-color: green;
+}

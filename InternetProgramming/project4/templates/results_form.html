@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" id="results_form">
+	<head>
+		<title>myMovies Xpress! - Search Results</title>
+		<link rel="stylesheet" type="text/css" href="../css/mySite.css" />
+		<script src="./script.js"></script>
+	</head>
+	<body>
+		<h3>Welcome, <?= $_SESSION["displayName"] ?> (<a href="javascript: confirmLogout()">logout</a>)</h3>
+		<h1>myMovies Xpress!</h1>
+<!-- DO NOT REMOVE OR MODIFY THE CODE OR PLACE YOUR CODE ABOVE THIS LINE -->
+		<div>
+		    <label><?php echo count($resultsArray); ?>  movie(s) found for the keyword: <?php echo $searchString; ?></label>
+			<?php if (count($resultsArray) > 0){ ?>
+				<table class="bordered">
+                    <tr>
+                        <td>Poster</td>
+                        <td>Title (Year)</td>
+                        <td>Add Movie</td>
+                    </tr>
+                    <?php foreach($resultsArray as $movie){ ?>
+                        <tr>
+                        <td><img alt="Failed to load poster" src="<?php echo $movie['Poster']; ?>" height="100"></td>
+                        <td><a href="https://www.imdb.com/title/<?php echo $movie['imdbID']; ?>/"> </a><?php echo $movie['Title'] . " (" . $movie['Year'] . ")" ?></td>
+						<td><a href="javascript: addMovie('<?php echo $movie['imdbID']; ?>')">+</a></td>
+                        </tr>
+                    <?php }}?>
+                </table>
+			<input type="button" value="Cancel" onclick="javascript: confirmCancel()"/>
+		</div>
+<!-- DO NOT REMOVE OR MODIFY THE CODE OR PLACE YOUR CODE BELOW THIS LINE -->
+	</body>
+</html>
